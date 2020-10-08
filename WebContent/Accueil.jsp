@@ -67,7 +67,7 @@ span.psw {
 <h1>Bienvenue sur le site GestionFerme !</h1>
 
 
-    <div class="container">
+    <form action="Animaux.jsp" method="POST">
       <label for="uname"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -78,7 +78,7 @@ span.psw {
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
-    </div>
+    </form>
 
     <div class="container" style="background-color:#f1f1f1">
       <span class="psw">Forgot <a href="#">password?</a></span>
