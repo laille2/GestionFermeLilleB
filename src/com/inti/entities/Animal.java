@@ -1,6 +1,11 @@
 package com.inti.entities;
 
-public class Animal {
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Animal implements Serializable {
 	private Long idAnimal;
 	private boolean etat;
 	public Long getIdAnimal() {

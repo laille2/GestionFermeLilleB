@@ -1,6 +1,11 @@
 package com.inti.entities;
 
-public class BasseCour extends Animal {
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+
+@Entity
+public class BasseCour extends Animal implements Serializable {
 	private String habitat;
 
 	public String getHabitat() {

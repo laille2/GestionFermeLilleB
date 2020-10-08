@@ -1,6 +1,11 @@
 package com.inti.entities;
 
-public class Betail extends Animal {
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Betail extends Animal implements Serializable {
 	private String techElevage;
 
 	public String getTechElevage() {

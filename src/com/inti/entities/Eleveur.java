@@ -1,6 +1,11 @@
 package com.inti.entities;
 
-public class Eleveur {
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Eleveur implements Serializable {
 	private Long idEleveur;
 	private String nom;
 	private int age;
