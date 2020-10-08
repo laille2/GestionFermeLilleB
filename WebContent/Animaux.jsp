@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,47 +7,34 @@
 <title>Les Animaux</title>
 </head>
 <body>
-<form action="Etat" method="POST">
-<div>
-<label>Etat</label> <input type="text" name="Etat">
-</div>
-</form>
+	<form action="Etat" method="POST">
+		<div>
+			<label>Etat</label> <input type="text" name="Etat">
+		</div>
+	</form>
 
-<label for="basseCour">BasseCour</label> 
-<input type="checkbox" id="basseCour" onclick="myFunction()">
+	<label for="basseCour">BasseCour</label>
+	<input type="checkbox" id="basseCour" onclick="myFunction()">
 
-<label for="betail">Bétail</label> 
-<input type="checkbox" id="betail" onclick="myFunction()">
-
-
-
-<script>
-function myFunction() {
-  var checkBox = document.getElementById("myCheck");
-  var text = document.getElementById("text");
-  if (checkBox.checked == true){
-    text.style.display = "block";
-  } else {
-     text.style.display = "none";
-  }
-}
-</script>
+	<label for="betail">Bétail</label>
+	<input type="checkbox" id="betail" onclick="myFunction()">
 
 
-<form action="Habitat" method="POST">
-<div>
-<label>Habitat</label> <input type="text" name="Habitat">
-</div>
-</form>
+
+	<script>
+		function myFunction() {
+			var checkBox = document.getElementById("myCheck");
+			var text = document.getElementById("text");
+			if (checkBox.checked == true) {
+				text.style.display = "block";
+			} else {
+				text.style.display = "none";
+			}
+		}
+	</script>
 
 
-<form action="techElevage" method="POST">
-<div>
-<label>techElevage</label> <input type="text" name="techElevage">
-</div>
-</form>
-
-<button class="btn">Ajouter</button>
+	<button class="btn">Ajouter</button>
 
 </body>
 </html>
