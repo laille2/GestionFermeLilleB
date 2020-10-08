@@ -40,7 +40,6 @@ function myFunction() {
 </div>
 </form>
 
-
 <form action="techElevage" method="POST">
 <div>
 <label>techElevage</label> <input type="text" name="techElevage">
