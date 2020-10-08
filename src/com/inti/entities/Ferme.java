@@ -3,17 +3,14 @@
  */
 package com.inti.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Entity;
 
-/**
- * @author IN-LL-029
- *
- */
-@Entity
 
-public class Ferme {
+@Entity
+public class Ferme implements Serializable {
 	private Long idFerme;
 	private String nom;
 	private Date dateAchat;

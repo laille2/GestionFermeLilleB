@@ -1,6 +1,11 @@
 package com.inti.entities;
 
-public class Departement {
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Departement implements Serializable {
 	private Long idDepartement;
 	private String nom;
 	private String region;

@@ -1,6 +1,11 @@
 package com.inti.entities;
 
-public class Gerant {
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Gerant implements Serializable {
 	private Long idGerant;
 	private String nom;
 	private String prenom;
